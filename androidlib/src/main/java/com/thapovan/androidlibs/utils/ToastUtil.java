@@ -12,22 +12,22 @@ public class ToastUtil {
         showToast(context, message, Gravity.NO_GRAVITY);
     }
 
-    public static void showToast(Context context, @StringRes int stringID){
+    public static void showToast(Context context, @StringRes int stringId){
         if(context == null ) return;
-        showToast(context, context.getString(stringID));
+        showToast(context, context.getString(stringId));
     }
 
-    public static void showToast(Context context, @StringRes int strId, int gravity){
+    public static void showToast(Context context, @StringRes int stringId, int gravity){
         if(context == null ) return;
-        showToast(context, context.getString(strId), gravity);
+        showToast(context, context.getString(stringId), gravity);
     }
 
     public static void showCenterToast(Context context, String message){
         showToast(context, message, Gravity.CENTER);
     }
 
-    public static void showCenterToast(Context context, @StringRes int stringID){
-        showCenterToast(context,context.getString(stringID));
+    public static void showCenterToast(Context context, @StringRes int stringId){
+        showCenterToast(context,context.getString(stringId));
     }
 
     public static void showToast(Context context, String message, int gravity) {
