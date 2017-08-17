@@ -1,10 +1,11 @@
-package com.thapovan.androidlibs.utils;
+package com.thapovan.commonutils.toast;
 
 import android.content.Context;
 import android.support.annotation.StringRes;
 import android.view.Gravity;
 import android.widget.Toast;
-import com.thapovan.androidlibs.TextUtil;
+
+import com.thapovan.commonutils.text.TextUtil;
 
 public class ToastUtil {
 

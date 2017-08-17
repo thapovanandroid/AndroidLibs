@@ -1,11 +1,10 @@
-package com.thapovan.androidlibs;
+package com.thapovan.commonutils.text;
 
 import android.widget.EditText;
 
 public class TextUtil {
 
-	private TextUtil() {
-	}
+	private TextUtil() { }
 
 	public static String cleanupString(Object obj) {
 		if(obj == null) return "";
@@ -16,7 +15,7 @@ public class TextUtil {
 		}
 	}
 
-	public static String cleanupString(String str){
+	public static String cleanupString(String str) {
 		if(!TextUtil.isValidString(str)) return "";
 		return str.trim();
 	}
@@ -26,7 +25,7 @@ public class TextUtil {
 		if(editText==null) return false;
 		return isValidString(editText.getText().toString());
 	}
-//	Method to check text empty or null
+
 	public static boolean isValidString(String string) {
 		if(string == null){
 			return false;
@@ -40,7 +39,7 @@ public class TextUtil {
 	}
 
 	// Workaround for EditText Cursor position
-	public static void setText(EditText editText,String text){
+	public static void setText(EditText editText, String text){
 		editText.setText("");
 		if(TextUtil.isValidString(text)){
 			editText.append(text);

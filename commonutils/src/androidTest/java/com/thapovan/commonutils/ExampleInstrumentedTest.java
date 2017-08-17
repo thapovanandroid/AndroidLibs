@@ -1,4 +1,4 @@
-package com.thapovan.androidlibs;
+package com.thapovan.commonutils;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.thapovan.androidlibs.test", appContext.getPackageName());
+        assertEquals("com.thapovan.commonutils.test", appContext.getPackageName());
     }
 }

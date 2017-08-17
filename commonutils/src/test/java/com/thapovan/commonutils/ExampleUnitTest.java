@@ -1,4 +1,4 @@
-package com.thapovan.androidlibs;
+package com.thapovan.commonutils;
 
 import org.junit.Test;
 
